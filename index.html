@@ -1,34 +1,29 @@
-<div class="menubar">
-    <span class="hamburger" onclick="toggleSidebar()">&#9776;</span>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#career">Career</a>
-    <a href="#help">Help</a>
-    <div class="search-container">
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<div id="sidebar" class="sidebar">
-    <a href="#menu1">Menu1</a>
-    <div class="submenu">
-        <a href="#submenu1">Sub Menu1</a>
-    </div>
-    <a href="#menu2">Menu2</a>
-    <div class="submenu">
-        <a href="#submenu2">Sub Menu2</a>
-    </div>
-</div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-logo">My Website</div>
+    <ul class="navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<script>
-/* JavaScript to toggle the sidebar */
-function toggleSidebar() {
-    var sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left == "0px") {
-        sidebar.style.left = "-250px";  // Hide sidebar
-    } else {
-        sidebar.style.left = "0px";     // Show sidebar
-    }
-}
-</script>
+  <!-- Main Content -->
+  <section id="home" class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple single-page website created with HTML and CSS.</p>
+  </section>
+
+</body>
+</html>
